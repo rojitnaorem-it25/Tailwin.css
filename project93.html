@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 93</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body class="bg-[#031c25] m-8">
+
+    <div class="w-full border-1 border-[#c0bcbca8]">
+        <!-- Navbar -->
+         <div class="flex justify-center gap-[50%] items-center h-7 
+         bg-gradient-to-l from-[#04575c96] mt-10 mr-30">
+            <div>
+                <h1 class="
+                text-[18px] text-white tracking-widest font-semibol
+                max-[500px]:flex-col max-[500px]:items-end max-[500px]:mr-10
+            ">Portfolio</h1>
+            </div>
+            <div class="
+                text-[18px] text-gray-400 tracking-widest font-light
+                flex justify-end gap-[45%] items-center
+                max-[500px]:flex-col max-[500px]:items-end max-[500px]:mr-10
+            ">
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s]" href="about.html">Home</a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s]" href="about.html">About</a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s]" href="cases.html">Project</a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s]" href="contact.html">Contacts</a>
+            </div>
+         </div>
+        
+        <!-- about and image part -->
+        <div class="flex justify-end">
+            <div class="font-serif text-[white] text-[150px] text-end
+                    mt-10">
+                <h1 class="-mb-32 bg-gradient-to-r
+                 from-[#0e5894c0] to-[white] bg-clip-text text-transparent"
+                style="text-shadow:25px 15px 10px rgba(92, 90, 90, 0.5);"
+                 >About</h1>
+                <h1 class="-mb-20 bg-gradient-to-r
+                 from-[#0e5894c0] to-[white] bg-clip-text text-transparent"
+                style="text-shadow:25px 15px 10px rgba(92, 90, 90, 0.5);"
+                >me</h1>
+            </div>
+            <img
+            class="w-[50%] h-[500px] " 
+            src="/photo/developer-preview.png" alt="rojit">
+        </div>
+
+         <!-- Personal Description -->
+        <div class="mb-10 py-5 flex justify-center gap-[7%] mx-30
+         bg-gradient-to-r from-[#04575c96] hover:shadow-lg hover:shadow-gray-100/10 transition-all duration-300
+          ">
+                                
+            <div>
+                                <!-- personal information -->
+                <div class="border-l-2 border-white">
+                    <h1 class="
+                    text-4xl font-mono text-white mb-1 pl-2
+                    ">Chris Doe</h1>
+                    <p class="
+                    text-md text-gray-500 font-sans mb-4 pl-2
+                    ">Full Stack Developer</p>
+                </div>
+                                <!-- sign-in sign-up -->
+                <div class="
+                    h-7 m-auto text-sm text-white font-semibold tracking-wider
+                    flex gap-4">
+
+                    <button class="
+                    h-7 bg-gradient-to-l border-gray-700 border-1 px-2 rounded-md from-[#000408]
+                    hover:text-[#000408] hover:bg-gradient-to-r hover:pl-2 
+                    hover:rounded-md hover:from-[#447eb8] transition-all duration-500
+                    "><a href="log_in.html">Sign in</a></button>
+
+                    <button class="
+                    h-7 bg-gradient-to-l border-gray-700 border-1 px-2 rounded-md from-[#000408]
+                    hover:text-[#000408] hover:bg-gradient-to-r hover:pl-2 
+                    hover:rounded-md hover:from-[#447eb8] transition-all duration-500
+                    "><a href="sign_up.html">Sign up</a></button>
+                </div>
+            </div>
+                                <!-- social media -->
+            <div class="
+                text-gray-500 font-serif tracking-wider flex gap-10">
+                <p class="text-white">SOCIAL</p>
+                <div class="flex gap-2 h-5">
+                    <a class="pr-2 border-r-2 hover:text-[white] hover:white transition-all duration-[0.3s]" href="#">Twitter</a>
+                    <a class="pr-2 border-r-2 hover:text-[white] hover:white transition-all duration-[0.3s]" href="#">Instagram</a>
+                    <a class="pr-2 border-r-2 hover:text-[white] hover:white transition-all duration-[0.3s]" href="#">Facebook</a>
+                </div>
+            </div>
+                                <!-- view profile -->
+            <div class="flex flex-col font-sans">
+                <div class="text-white flex justify-start items-center gap-10 border-b-1 h-11 pb-2">
+                    <h1 class="font-semibold text-[50px] flex items-center">
+                        01
+                        <span class="text-[20px] pl-3">/ 06</span>
+                    </h1>
+                    <p class="
+                        text-[20px] text-gray-500 text-white">
+                        <a href="#"><i class="fa-solid fa-chevron-left text-gray-600"></i></a>
+                        1
+                        <a href="#"><i class="fa-solid fa-chevron-right text-gray-500"></i></a>
+                    </p>
+                </div>
+                <h1 class="
+                    text-[16px] font-serif tracking-wider text-white mt-3
+                    ">View Profile
+                </h1>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

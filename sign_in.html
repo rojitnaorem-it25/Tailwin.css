@@ -4,8 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
+<body class="bg-[#031c25]  max-sm:m-2">
+
+    <div  class="mx-[20%] mt-[10%] grid border-1 border-[#c0bcbc88]
+        ">
+
+        <div class="flex justify-center gap-10 p-10
+            max-md:flex max-md:flex-col max-md:items-center">
+
+            <div class="w-[50%] text-justify text-[#c7c4c4c5] grid border-r-2 pr-5
+            max-md:border-none max-md:w-[100%]">
+                <h1 class="text-white text-4xl text-center font-serif tracking-widest
+                max-md:text-2xl">Sign in </h1>
+                <p class="text-lg font-semibold text-white mt-10
+                max-md:text-sm">Rules :</p>
+                <p class="max-md:text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="w-[50%] max-md:w-[100%]">
+                <div class="grid gap-5 mb-5">
+                    <h1 class="bg-gray-400 text-center rounded-sm text-3xl text-[#031c25] font-mono tracking-widest">Welcome</h1>
+                    <p class="text-gray-400 text-center"> Login to continue</p>
+                </div>
+                <div class="text-gray-400 grid gap-3">
+                    <p class="flex items-center gap-2 border-b-1"><i class="fa-solid fa-envelope"></i><input type="text" placeholder="Email"></p>
+                    <p class="flex items-center gap-2 border-b-1"><i class="fa-solid fa-lock"></i><input type="text" placeholder="Email"></p>
+                    <input type="text" class="bg-gray-400 text-center rounded-sm text-[#000d11] font-semibold font-mono tracking-widest" placeholder="LOGIN">
+                </div>
+                <div class="flex justify-between px-2 pt-1">
+                    <i class="text-[#e91010ab] text-xs tracking-widest">Forgot password</i>
+                    <a class="text-[#060696] text-xs rounded-sm bg-[#e7e8e9f8] px-2 py-0.5 mt-3" href="#">Sign up</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
     
 </body>
 </html>

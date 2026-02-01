@@ -7,26 +7,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body class="bg-[#031c25] m-10 border-1 border-white">
+<body class="bg-[#031c25] m-10 border-1 border-[gray]">
 
         <div class="p-5">
 
             <!-- Navbar part -->
             <div class="h-7 text-[18px] text-gray-400 tracking-widest font-light 
                 flex justify-center gap-[10%] items-center bg-gradient-to-l from-[#04575c96] my-10 mx-10
-                max-md:gap-[8%] max-md:mx-1 max-sm:justify-between max-sm:mx-5
+                max-md:gap-[8%] max-md:justify-between max-md:px-3
             ">
                 <h1 class="text-[18px] text-white tracking-widest font-bold">Portfolio</h1>
-                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-sm:hidden" href="about.html">Home</a>
-                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-sm:hidden" href="about.html">About</a>
-                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-sm:hidden" href="cases.html">Project</a>
-                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-sm:hidden" href="contact.html">Contacts</a>
-                <a class="hidden max-sm:block" href="#"><i class="fa-solid fa-bars"></i></a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-md:hidden" href="about.html">Home</a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-md:hidden" href="about.html">About</a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-md:hidden" href="cases.html">Project</a>
+                <a class="hover:text-[white] hover:border-b-1 hover:white transition-all duration-[0.3s] max-md:hidden" href="contact.html">Contacts</a>
+                <a class="hidden max-md:block" href="#"><i class="fa-solid fa-bars"></i></a>
             </div>
-            <div class="flex justify-center gap-10">
+            <div class="flex justify-center gap-10 max-md:grid">
                 <!-- description part -->
-                <div class="w-[40%] grid gap-5">
-                    <div class=" text-white text-3xl tracking-widest font-serif font-semibold">
+                <div class="w-[45%] max-md:w-auto grid gap-5">
+                    <div class=" text-white text-3xl tracking-widest font-serif font-semibold
+                        max-sm:text-2xl ">
                         <h1>Customer Software</h1>
                         <h1>Development Company</h1>
                     </div>
@@ -46,7 +47,7 @@
                     </div>
                 </div>
                 <!-- image part -->
-                <div class="w-[40%]">
+                <div class="w-[45%] max-md:w-auto">
                     <img class="w-full object-cover"
                      src="/photo/FSD_AI.webp" alt="">
                 </div>
@@ -61,7 +62,7 @@
                     <p class="text-sm text-gray-400 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quos eaque amet vel vitae necessitatibus ea praesentium unde saepe distinctio fugit.</p>
                     
                 </div>
-                <div class="grid grid-cols-6 gap-2">
+                <div class="grid grid-cols-6 gap-2 max-md:grid-cols-2 max-sm:grid-cols-1">
                     <!-- 1 -->
                     <div class=" bg-[#011227bb] rounded-md flex flex-col items-center gap-3 py-4">
                         <p class="w-12 h-12 bg-[#ad49e7a8] rounded-full grid justify-center items-center"><i class="fa-solid fa-mobile-vibrate text-2xl text-[#011627]"></i></p>
@@ -119,19 +120,213 @@
                 </div>
             </div>
             <!-- Recent Project -->
-             <div>
-                <h1>Recent Project</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aut quaerat tempora obcaecati, unde sit illo molestias eos veniam alias animi, illum earum vero assumenda a autem minus dolor culpa!</p>
-                <div>
-                    <button class="bg-[#010d1d]">AI</button>
+             <div class="my-20 p-8 rounded-xl grid gap-5 bg-[#04365380]">
+
+                <h1 class="text-white text-2xl font-serif font-semibold tracking-widest text-center">Recent Projects</h1>
+                <p class="text-sm text-gray-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iure itaque temporibus, quae recusandae sit? Modi commodi consequatur quae facilis culpa magni laboriosam illo quos ea temporibus, enim cumque iste! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aut quaerat tempora obcaecati, unde sit illo molestias eos veniam alias animi, illum earum vero assumenda a autem minus dolor culpa!</p>
+                
+                <div class="grid grid-cols-6 gap-3 mb-15 bg-gradient-to-l from-[#0f9bc5] to-[#012e4d] p-5 rounded-lg
+                    max-md:grid-cols-2 max-sm:grid-cols-1">
+                    <button class="text-white text-sm px-6 py-0.5 border-gray-600 border-1 rounded-sm hover:bg-[#011d41d8] transition-all duration-500">AI</button>
+                    <button class="text-white text-sm px-6 py-0.5 border-gray-600 border-1 rounded-sm hover:bg-[#011d41d8] transition-all duration-500">Web Designing</button>
+                    <button class="text-white text-sm px-6 py-0.5 border-gray-600 border-1 rounded-sm hover:bg-[#011d41d8] transition-all duration-500">Mobile Application</button>
+                    <button class="text-white text-sm px-6 py-0.5 border-gray-600 border-1 rounded-sm hover:bg-[#011d41d8] transition-all duration-500">Graphic Designing</button>
+                    <button class="text-white text-sm px-6 py-0.5 border-gray-600 border-1 rounded-sm hover:bg-[#011d41d8] transition-all duration-500">UI/UX Designing</button>
+                    <button class="text-white text-sm px-6 py-0.5 border-gray-600 border-1 rounded-sm hover:bg-[#011d41d8] transition-all duration-500">More</button>
+                </div>
+
+                <div class="grid grid-cols-5 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1">
+                    <!-- 1 -->
+                    <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_1.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                     <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_2.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_3.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                     <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_1.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                     <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_3.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 5 to 10 -->
+                     <!-- 1 -->
+                    <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_2.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                     <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_3.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_1.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                     <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_1.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                     <div class="bg-gradient-to-l from-[#096088] to-[#000f1b] p-5 grid gap-2 border-1 border-gray-400 rounded-xl">
+                        <img class="w-auto rounded-lg"
+                        src="/photo/client_1.png" alt="">
+                        <h1 class="text-white text-xl font-serif font-semibold tracking-wide">Client's Says</h1>
+                        <p class="text-gray-400 text-sm text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudant totam pe</p>
+                        <div class="text-white text-sm
+                        ">
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star text-[#ca4f07cb]"></i>
+                            <i class="fa-solid fa-star-half text-[#ca4f07cb]"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-
-
-
-
-
+            <!-- footer -->
+             <footer class="bg-[#070707b0] p-5 rounded-lg">
+                <div class="flex justify-around gap-10 max-md:grid max-md:grid-cols-2 max-sm:grid-cols-1">
+                    <div class="w-[30%] max-md:w-auto">
+                        <h1 class="text-white text-2xl tracking-widest font-semibold mb-5">Portfolio</h1>
+                        <p class="text-gray-400 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolores obcaecati suscipit ad quos nisi perferendis, corporis delectus cor</p>
+                    </div>
+                    <div class="text-white">
+                        <h1 class="text-xl tracking-wider bg-gradient-to-r from-[#c0bdbd] to-[#042341] text-black pl-2 mb-2">Contact</h1>
+                        <div class="ml-3">
+                            <p>Email : <span class="text-gray-500">portfolio@gmail.com</span></p>
+                            <p>Phone : <span class="text-gray-500">+9118-0032-5200</span></p>
+                            <p>Phone : <span class="text-gray-500">+9118-0032-0333</span></p>
+                        </div>
+                    </div>
+                    <div class="text-white grid max-md:w-auto">
+                        <p class="text-xl tracking-wider bg-gradient-to-r from-[#c0bdbd] to-[#042341] text-black text-center px-2 mb-2 max-md:px-0">Resources & legal</p>
+                        <div class="grid ml-3">
+                            <a class="text-gray-300" href="#">Feedback</a>
+                            <a class="text-gray-300" href="#">Help</a>
+                            <a class="text-gray-300" href="#">Term & Conditions</a>
+                            <a class="text-gray-300" href="#">Privacy Statement</a>
+                            <a class="text-gray-300" href="#">Policy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-white text-xl flex gap-5 justify-center my-3">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="bg-gradient-to-r from-[#c0bdbd] to-[#042341] ">
+                    <p class="text-md text-center tracking-widest font-mono py-2">Copyright@2026 Portfolio.inc</p>
+                </div>
+             </footer>
+        
 
         </div>   
 </body>

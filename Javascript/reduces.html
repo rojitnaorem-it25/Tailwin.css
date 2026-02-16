@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body>
+        <h1 class="text-3xl font-serif font-semibold mx-5 mt-5">Reduce Practice : </h1>
+
+
+        <section class="bg-[#011a24] m-5 p-5 text-white rounded-xl">
+            <!-- all details of Balance -->
+            <div class="border-1 border-white p-5 rounded-lg">
+                <h1 class="text-xl py-2 font-semibold text-center bg-[#074066d8] text-gray-200 rounded-md">Grand Balance : <span>₹ 35000</span></h1>
+                
+                <div class="flex justify-center gap-25 mt-5">
+                    <p class="bg-[#0a4a5375] px-2 tracking-[2px] font-semibold text-[red] rounded-sm"> Total Credit : <span> ₹ 1500</span></p>
+                    <p class="bg-[#38c6dbbe] px-2 tracking-[2px] font-semibold text-[black] rounded-sm">Total Debit : <span> ₹ 500</span></p>
+                </div>
+            </div>
+                <!-- pay credit / debit -->
+
+            <div class="mt-5  flex  gap-5">
+
+               <form class="w-[25%] p-5 border-r-3 border-gray-500 rounded-sm" action="#">
+                    <div class="grid justify-center ">
+                        <input class="text-center text-4xl outline-none text-gray-50 font-mono" type="text" required placeholder ="₹ 000.00">
+                        <input class="text-center mt-3 outline-none text-gray-400 font-serif" type="text" required placeholder="add remark">
+                    </div>
+                    <div class="flex gap-5 justify-center mt-3">
+                            <label class="credit flex gap-2 items-center border-1 border-gray-600 px-1.5 rounded-sm">
+                            <input type="radio" name="credit"><span> credit</span></label>
+                    
+                            <label   label class="debit flex gap-2 items-center border-1 border-gray-600 px-1.5 rounded-sm">
+                            <input type="radio" name="debit"><span> debit</span>
+                            </label>
+                    </div>
+                    <p class="flex justify-center mt-3">
+                        <input class="bg-[#0f587a6c] px-2 mt-3 rounded-sm text-white" type="submit" value="Pay now">
+                    </p>
+               </form>
+
+               <!-- your transaction -->
+                <div class="grid grid-cols-4 items-center gap-5 mb-2">
+
+                            <!-- credit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Credit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-plus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div><!-- debit transaction -->
+                    <div class="w-50">
+                        <h1 class="text-center text-lg tracking-[4px] bg-[#c2baba28] rounded-md rounded-b-none mb-5">Debit details</h1>
+                        <div class="flex justify-between items-center px-2 border  border-t-0 border-gray-600 rounded-md rounded-t-none pb-2">
+                            <p class="text-[12px]">remarked.</p>
+                            <p class="text-[8px]"><i class="fa-solid fa-minus"></i>
+                                <span class=""></span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                
+             <!--end your transaction -->
+
+            </div>
+        </section>
+</body>
+</html>

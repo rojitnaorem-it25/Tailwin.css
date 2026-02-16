@@ -82,26 +82,49 @@
 //  trafic light
     
     function traficlight(action){
-        if(action == "stop"){
-    const stop = document.getElementById("stop");
-    stop.innerHTML = `
-    <div class="h-20 w-20 bg-red-500 rounded-full"></div>
-    `;
-       console.log();
-       
-        }else if(action == "ready"){
-    const ready = document.getElementById("ready");
-    ready.innerHTML = `
-    <div class="h-20 w-20 bg-orange-500 rounded-full"></div>
-    `;
+    const stop=document.getElementById("stop");
+    const ready=document.getElementById("ready");
+    const go=document.getElementById("go");
 
-        }else if(action == "go") {
-    const go = document.getElementById("go");
-    go.innerHTML = `
-    <div class="h-20 w-20 bg-green-500 rounded-full"></div> 
-    `;
-        }
-    } 
+    stop.classList.replace("bg-red-500", "bg-gray-200");
+    ready.classList.replace("bg-orange-500", "bg-gray-200");
+    go.classList.replace("bg-green-500", "bg-gray-200");
+
+
+
+    if(action == "stop") {
+   stop.classList.replace("bg-gray-200", "bg-red-500");
+   
+   
+    // const stop = document.getElementById("stop");
+    // stop.classList.replace("bg-red-500", "bg-gray-200");
+    // stop.innerHTML = `
+    // <div class="h-20 w-20 bg-red-500 rounded-full"></div>
+    //  `;
+    
+    }
+    else if(action == "ready") {
+    ready.classList.replace("bg-gray-200","bg-orange-500");    
+
+    // const ready = document.getElementById("ready");
+    // ready.innerHTML = `
+    // <div class="h-20 w-20 bg-orange-500 rounded-full"></div>
+    // `;
+
+    }
+    else if(action == "go") {
+    go.classList.replace("bg-gray-200","bg-green-500");
+    
+    // const go = document.getElementById("go");
+    // go.innerHTML = `
+    // <div class="h-20 w-20 bg-green-500 rounded-full"></div> 
+    // `;
+
+
+    }
+} 
+
+
 //     const button_name =[
 //     "Stop", "Ready", "Go"
 //     ]

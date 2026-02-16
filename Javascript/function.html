@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="text-4xl font-serif font-bold text-center
+    ">Fuction JavaScript : </h1>
+
+
+    <section  class="">
+        <div  class="flex gap-5 justify-center mt-10">
+        <div id="stop"  class="h-20 w-20 bg-gray-200 rounded-full"></div>
+        <div id="ready" class="h-20 w-20 bg-gray-200 rounded-full"></div>
+        <div id="go"    class="h-20 w-20 bg-gray-200 rounded-full"></div>
+        
+        </div>
+        <div id="button_list" class="flex justify-center gap-5 mt-5">
+            <button onclick="traficlight('stop')"   class="w-20 bg-gray-300 text-center border-gray-500 border-1 rounded-sm">Stop</button>
+            <button onclick="traficlight('ready')"  class="w-20 bg-gray-300 text-center border-gray-500 border-1 rounded-sm">Ready</button>
+            <button onclick="traficlight('go')"     class="w-20 bg-gray-300 text-center border-gray-500 border-1 rounded-sm">Go</button>
+        </div>
+    </section>
+
+
+    <script>
+        
+        // function function(){
+        //     console.log("hello world");  
+        // }
+        // function();
+        
+
+    //    function sayHello(name , age, city,){
+    //     console.log("I am"+" " + name+ " " + age+"years Old"+" "+"from"+" "+city);
+    //    }
+    //     sayHello("rohit", 12, "imphal");    
+    //     sayHello("thoiba", 25, "nambol");    
+    //     sayHello("maithon", 35, "sangaiprou");    
+       
+
+    // function add(a , b){
+    //     let c=a+b;
+    //     let d=a-b
+    //     let e=a*b
+    //     let f=a/b
+    //     let g=a%b
+    //     console.log("sum is" +" "+c);
+    //     console.log("substract is" +" "+d);
+    //     console.log("multiplied is" +" "+e);
+    //     console.log("divison is" +" "+f);
+    //     console.log("remainder is" +" "+g);
+    // }
+    //     add(15 ,"6");
+       
+    // function with if else
+//     function order(amount, distance){
+//         let discount = "";
+//         let delivery = "";
+
+//         // discount if else
+//         if(amount >= 1000){
+//             discount = "you get 20% discount. ";
+//         }else{
+//             discount = "you get no discount. "
+//         }
+//          console.log(discount);
+        
+//         // delivery
+//         if(distance <= 5){
+//             delivery = "the order will be delivered in 1 day.";
+//         }else{
+//             delivery = "the order will be delivered in 2 day."
+//         }
+//          console.log(delivery);
+//     }
+//    order(1200,5)
+
+//  trafic light
+    
+    function traficlight(action){
+        if(action == "stop"){
+    const stop = document.getElementById("stop");
+    stop.innerHTML = `
+    <div class="h-20 w-20 bg-red-500 rounded-full"></div>
+    `;
+       console.log();
+       
+        }else if(action == "ready"){
+    const ready = document.getElementById("ready");
+    ready.innerHTML = `
+    <div class="h-20 w-20 bg-orange-500 rounded-full"></div>
+    `;
+
+        }else if(action == "go") {
+    const go = document.getElementById("go");
+    go.innerHTML = `
+    <div class="h-20 w-20 bg-green-500 rounded-full"></div> 
+    `;
+        }
+    } 
+//     const button_name =[
+//     "Stop", "Ready", "Go"
+//     ]
+//     function button_on(){
+//     for(i=0 ; i< button_name.length ; i++){
+//     const button_list = document.getElementById("button_list");
+//     button_list.innerHTML += `
+//     <button class="w-20 bg-gray-300 text-center border-gray-500 border-1 rounded-sm">${button_name[i]} </button>
+//     `;
+//     }
+// }  
+    // button_on();
+
+
+    </script>
+</body>
+</html>

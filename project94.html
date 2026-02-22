@@ -10,19 +10,34 @@
 </head>
 <body class="bg-[#000e0f] text-white">
 
-    <section class="bg-gradient-to-b from-[#3c3e3f6b] py-5 mx-5 max-sm:mx-1 mt-5 rounded-md sticky top-0 
+    <section  class="
+    ">
+                <!-- socia media -->
+                <div id="socialMedia" class="grid gap-1 w-12 py-2 px-3 rounded-sm bg-gradient-to-l from-slate-800 hover:bg-gradient-to-l hover:to-slate-800
+                fixed -top-40 transition-all duration-700
+                ">
+                    <a href="index.html"><i class="fa-brands fa-facebook-f text-[#0b0be7]"></i></a>
+                    <a href="project93.html"><i class="fa-brands fa-whatsapp text-[#4de04d]"></i></a>
+                    <a href="tailwinintro.html"><i class="fa-brands fa-linkedin-in text-[#e3e8e9]"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-twitter text-[#1f7bd1]"></i></a>
+                    <a href="index.html"><i class="fa-brands fa-instagram text-[#d60e9a]"></i></a>                   
+                </div>
+    </section>
+
+    <section class="bg-gradient-to-b from-[#3c3e3f6b] py-5 mx-5 max-sm:mx-1 mt-5 rounded-md  
     hover:shadow-md hover:shadow-gray-700/50 transition-all duration-500 max-sm:bg-gradient-to-l from-[#bbb6b63a]
     ">
-        <div class="flex justify-between items-center mx-5 
+        <div class="flex justify-between items-center mx-5  
         ">
             <!-- logo -->
             <div class="flex items-center gap-2
-            ">
+            "> 
+               <!-- logo area -->
                 <div class="border-1 border-gray-400 w-9.5 h-9.5 rounded-full flex justify-center items-center">
                     
                     <p class="w-8 h-8 text-2xl border-1 rounded-full bg-white text-[#011d20] flex justify-center items-center
                     ">
-                    <i class="fa-brands fa-battle-net"></i>
+                    <i class="fa-brands fa-battle-net"></i> 
                     </p>
                 </div>
 
@@ -33,8 +48,8 @@
             </div>
 
             <!-- communication -->
-            <div id="menubar" class=" flex items-center  gap-8 text-gray-500
-            max-md:hidden    max-sm:block max-sm:bg-[#4045473b] max-sm:px-2 py-2 rounded-lg max-sm:text-center max-sm:fixed -right-20 top-28 transition-all duration-500
+            <div id="menubar" class=" flex items-center  gap-7 text-gray-500
+            max-md:hidden    max-sm:block max-sm:bg-[#4045473b] max-sm:px-2 py-2 rounded-lg max-sm:text-center max-sm:fixed -right-20 top-30 transition-all duration-1000
             ">
                 <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
                 <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
@@ -56,6 +71,9 @@
                  <button id="nav" class="hover:bg-gradient-to-t from-[#e1e5ec91] px-2 rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
                  border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
                  ">sign-up</button>
+                 <button onclick="asidesocialMedia()" class=" max-[790px]:hidden">
+                    <i class="fa-regular fa-handshake"></i>
+                 </button>
             </div>
 
             <div class="hidden max-md:block
@@ -66,33 +84,16 @@
                     <i class="fa-solid fa-bars"></i>
                 </button>
                 <!-- contact short -->
-                <button>
+                <button onclick="asidesocialMedia()">
                     <i class="fa-solid fa-square-phone"></i>
                 </button>
             </div>
 
         </div>
 
-        <div>
-                <!-- socia media -->
-                <!-- <div>
-                    <a href="index.html"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="project93.html"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="tailwinintro.html"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="index.html"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="index.html"><i class="fa-brands fa-facebook-f"></i></a>                   
-                </div> -->
-                <!-- phone number -->
-                <!-- <div>
-                    <p>+918974883855</p>
-                    <p>+913365488385</p>
-                    <p>+917250088385</p>
-                </div> -->
-            </div>
+        
     </section>
-    <div class="bg-gray-500 w-20 h-20 fixed top-5 -left-18">
-        <p >Aside</p>
-    </div>
+    
     
 <section class="text-gray-500">
 <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, provident! Magnam necessitatibus debitis sit cumque consequatur porro aut deleniti maiores autem! Saepe hic distinctio necessitatibus neque temporibus quo reprehenderit quod.
@@ -150,6 +151,11 @@ Iusto dolor provident facilis, fugit deserunt autem recusandae, delectus, harum 
         function asideMenu() {
         const menubar = document.getElementById("menubar");
         menubar.classList.toggle("right-0")
+        }
+
+        function asidesocialMedia() {
+        const socialMedia = document.getElementById("socialMedia");
+        socialMedia.classList.toggle("top-30")
         }
         
     </script>

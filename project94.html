@@ -11,8 +11,8 @@
 <body class="bg-[#000e0f] text-white">
    
 
-    <section class="bg-gradient-to-b from-[#3c3e3f6b] py-5 mx-5 max-sm:mx-1 mt-5 rounded-md 
-    hover:shadow-md hover:shadow-gray-700/50 transition-all duration-500 max-sm:bg-gradient-to-l from-[#bbb6b63a]
+    <section class="bg-gradient-to-b from-[#3c3e3f6b] py-5 mx-5 max-sm:mx-1 mt-5 rounded-md sticky top-0 z-10
+    hover:shadow-md hover:shadow-[#c6f00d]/40 transition-all duration-500 max-sm:bg-gradient-to-l max-sm:from-[#bbb6b63a]
     ">
         <div class="flex justify-between items-center mx-5  
         ">
@@ -28,37 +28,51 @@
                     </p>
                 </div>
 
-                <h1 class="font-serif text-xl tracking-widest
+                <h1 class="font-serif text-xl max-md:text-lg tracking-widest
                 ">
                 Electro Pro
                 </h1>
             </div>
 
             <!-- communication -->
-            <div id="menubar" class=" flex items-center  gap-7 text-gray-500
-            max-md:hidden    max-sm:block max-sm:bg-[#4045473b] max-sm:px-2 py-2 rounded-lg max-sm:text-center max-sm:fixed -right-20 top-30 transition-all duration-1000
+            <div class=" flex items-center gap-10 text-gray-500 border-1 border-transparent max-[850px]:gap-3
+            max-md:hidden">
+                <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
+                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+            </div>
+            <div id="menubar" class="hidden border-1 border-transparent
+            max-md:block max-md:text-gray-200 max-md:bg-[#4045473b] max-md:px-2 py-2 rounded-lg max-md:text-center max-md:fixed -right-20 top-30 transition-all duration-1000
             ">
                 <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
                 <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
                 <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
                 <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
                 <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-                
                
             </div>
 
             <!-- button area -->
-            <div class="flex gap-2 
-            max-sm:grid max-sm:grid-cols-1
+            <div class="
+            max-md:grid max-md:grid-cols-1 max-md:items-center
                ">
-                 <button id="nav" class="hover:bg-gradient-to-t from-[#e1e5ec91] px-2 rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
+               <label class="text-center" for="search">search</label>
+                <input
+                class="text-center bg-gray-700 w-20
+                hover:bg-gradient-to-t from-[#e1e5ec91] rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
                  border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
-                 ">sign-in</button>
+                 "
+                type="text" 
+                id="search" 
+                >
 
                  <button id="nav" class="hover:bg-gradient-to-t from-[#e1e5ec91] px-2 rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
-                 border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
+                 border-1 border-transparent hover:border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
                  ">sign-up</button>
-                 <button onclick="asidesocialMedia()" class=" max-[790px]:hidden">
+
+                 <!-- socialMedia button -->
+                 <button onclick="asidesocialMedia()" class=" max-md:hidden">
                     <i class="fa-regular fa-handshake"></i>
                  </button>
             </div>
@@ -80,7 +94,7 @@
 
         <!-- socia media -->
                 <div id="socialMedia" class="grid gap-1 w-12 py-2 px-3 rounded-sm bg-gradient-to-l from-slate-800 hover:bg-gradient-to-l hover:to-slate-800
-                fixed -top-40 transition-all duration-700
+                fixed -top-40 right-20 transition-all duration-700
                 ">
                     <a href="index.html"><i class="fa-brands fa-facebook-f text-[#0b0be7]"></i></a>
                     <a href="project93.html"><i class="fa-brands fa-whatsapp text-[#4de04d]"></i></a>
@@ -90,7 +104,8 @@
                 </div>
     </section>
 
-    <section class="my-10 w-full flex justify-between gap-5 items-center
+    <section id="longaside"
+    class="my-10 w-full flex justify-between gap-5 items-center
     max-sm:grid max-sm:text-center
     ">
 
@@ -119,23 +134,160 @@
             Explore
             </button>
 
-            </div>
+        </div>
         
+        <!-- cart area -->
+                <a href=""></a>
+                <button onclick="asideCart()"
+                class="fixed top-65 right-1 text-[#010911] text-xl w-12 h-12 bg-[#2d5f6ec9] text-center rounded-sm 
+                max-sm:top-65
+                ">
+                    <i class="fa-solid fa-cart-arrow-down "></i>
+                    <p class="text-sm font-serif font-semibold text-gray-200
+                    ">
+                        + 1</p>
+                </button>
+
     </section>
+
+
+    <section class="m-5
+    "> 
+        <div class="border-1 border-gray-600 rounded-md w-70 bg-[#065e7931] shadow-lg shadow-gray-500/30
+        ">
+            <div class="relative px-3 pt-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex gap-30 px-3 font-thin bg-[#3534345d] rounded-sm
+                absolute left-4 top-4 z-1 
+                ">
+                    <p class="text-sm text-[#000813] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+                    <p class="text-gray-400"
+                    ><i class="fa-regular fa-heart text-sm"></i></p>
+                </div>
+
+                <!-- rating -->
+                <div class="max-w-30 text-gray-200 text-sm py-0.5 flex justify-center items-center gap-2 rounded-sm bg-[#57535349] font-mono tracking-widest
+                absolute top-37 left-4 z-1
+                ">
+                    <p>5.1</p>
+                    <p class="border-r-2 pr-2"
+                    ><i class="fa-solid fa-star text-orange-500 text-xs"></i></p>
+                    <p>318</p>
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
     
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
     
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit amet  nulla beatae doloribus maiores omnis aliquid distinctio molestiae commodi earum?
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. <span class="text-white tracking-widest">65000</span></p>
+                   <p class="text-xs text-pink-400 line-through decoration-black decoration-2
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-sm text-white bg-orange-600 px-2 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-600 hover:font-semibold  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-sm text-black bg-gray-400 px-2 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400 hover:font-semibold hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ratione excepturi dolore officia deserunt nostrum voluptates ipsam, obcaecati voluptatum perferendis, fuga eaque vero deleniti tempora nulla quos vitae voluptatem accusantium.
+    Tempore, dicta? Impedit, obcaecati. Numquam tenetur, vero similique dolor amet voluptatibus nobis molestiae iure, vel modi eos possimus quisquam! Voluptas molestias illum voluptatem quos nemo officia expedita deleniti adipisci dolorem!
+    Reprehenderit nemo quam pariatur amet tempora culpa exercitationem ipsum error odio esse, rem qui explicabo quisquam, mollitia accusantium possimus soluta porro nobis ducimus. Molestiae deserunt ab optio! Iusto, earum labore.
+    Deserunt cupiditate, praesentium hic sit dignissimos voluptatibus possimus repudiandae ab nam. Natus ullam alias ducimus eius cumque, fugiat perspiciatis animi ad modi minima vitae fuga quas labore, necessitatibus exercitationem placeat.
+    Esse hic accusantium at amet neque incidunt consequatur animi nisi quidem debitis nemo alias eum, impedit, itaque cupiditate laboriosam totam? Iusto voluptatibus accusantium reprehenderit voluptatem aliquam in dolorem temporibus sint?
+    Perferendis, rerum tempora. Quis omnis minima nulla! Esse, beatae! Iste modi aperiam ipsam similique magnam. Possimus libero voluptas animi quisquam cupiditate ipsum illo totam ut deleniti, consectetur aut officia voluptatem!
+    Dignissimos, similique ab culpa iure repellat doloribus ratione natus delectus ut veritatis rerum omnis maxime dolorem, nostrum illum? Perspiciatis laudantium voluptate molestias obcaecati modi cum, nam autem ipsam ea tempore?
+    Nostrum eveniet ipsa provident iste id exercitationem. Amet ipsa explicabo velit. Illum fugit autem quia molestias voluptate nam. Explicabo, mollitia. Soluta doloribus officia porro libero? Velit nulla consequatur hic saepe?
+    Ipsum nisi provident natus ipsa placeat repellendus reprehenderit quod iste minus pariatur itaque porro fuga, possimus in tempora quis alias maxime, recusandae ea qui libero voluptatum et? Est, earum reprehenderit.
+    Maiores commodi ducimus voluptas delectus ipsum hic modi a! Repudiandae velit a molestiae enim autem hic, quasi explicabo, nostrum minima consectetur eum! Iste perspiciatis quaerat reiciendis unde beatae sequi a.
+    Tempore quasi quod corrupti nostrum fugit modi autem, et id consequuntur ipsum? Voluptatibus maxime maiores quasi suscipit iste aspernatur totam ea vero incidunt eaque. Praesentium sapiente repellendus quis laudantium itaque.
+    Debitis architecto minus ipsum quis pariatur ipsa, similique error veniam nam earum, ad odio a deserunt neque commodi et aperiam, eligendi vero deleniti magni voluptate sit labore omnis? Laboriosam, iste.
+    Tenetur quas eligendi, id, voluptatem consequuntur nam esse optio cupiditate cum autem, repellat iusto nesciunt? Deserunt consectetur corporis itaque, ab, maiores commodi corrupti facere consequuntur error magnam fugit ratione voluptatibus?
+    Quod nesciunt ipsam et doloribus eveniet. Labore, expedita quidem fugit sit laudantium quae unde blanditiis ipsam? Impedit possimus nihil et ea, nostrum molestiae maxime deserunt eligendi dolorem reiciendis optio odio?
+    Ab dolores, repudiandae quis dolorum beatae assumenda totam quibusdam perspiciatis a. Consectetur id ad quisquam rem nostrum sapiente repellat perferendis ipsa accusamus modi officiis magni cupiditate nobis mollitia, reiciendis inventore.
+    Laborum suscipit itaque obcaecati? Fuga non ad eius saepe sapiente optio adipisci consectetur! Doloribus praesentium officia quibusdam tempora! Ad deleniti fugit neque recusandae magni eaque iusto temporibus aut consectetur possimus?
+    Odio nulla saepe unde sequi, velit at impedit itaque, suscipit, veritatis aspernatur tempora optio enim assumenda distinctio laborum praesentium eaque inventore perferendis vero repudiandae vitae ipsam aliquid maiores id. Hic.
+    Nam sed maxime excepturi eaque doloremque repellendus pariatur dignissimos? Velit, amet consequuntur, molestiae molestias consectetur, possimus quibusdam quod dolorem modi expedita asperiores animi? Aliquam reprehenderit tempora asperiores amet voluptates sit!
+    Quod fugit ipsa hic, ea sequi aliquam, et quo ab corrupti eum error rerum reiciendis obcaecati tempore tempora? Animi ut corrupti molestiae dignissimos placeat eveniet. Non placeat facere ut aliquam.
+    Quae aspernatur veniam suscipit labore. Provident, corporis earum hic similique consequuntur, eius aliquid eos sed, voluptas blanditiis deleniti! Facilis hic corporis ipsam inventore officia expedita provident sit eligendi commodi illum!
+     -->
 
     <script>
+
+const socialMedia = document.getElementById("socialMedia");
+const menubar = document.getElementById("menubar");
+const cartcontainer =document.getElementById("cartcontainer");
+
         function asideMenu() {
-        const menubar = document.getElementById("menubar");
         menubar.classList.toggle("right-0")
         }
 
         function asidesocialMedia() {
-        const socialMedia = document.getElementById("socialMedia");
         socialMedia.classList.toggle("top-2")
         }
+
+        function asideCart() {
+        asideCart.classList.toggle("right-10")
+        }
         
+        asideCart
+
     </script>
 </body>
 </html>

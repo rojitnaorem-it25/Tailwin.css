@@ -11,13 +11,14 @@
 <body class="bg-[#000e0f] text-white">
    
 
-    <section class="bg-gradient-to-b from-[#3c3e3f6b] py-5 mx-5 max-sm:mx-1 mt-5 rounded-md sticky top-0 z-10
+    <section class="bg-[#151616cb] py-5 mx-5 max-sm:mx-1 mt-5 rounded-md sticky top-5 z-10
     hover:shadow-md hover:shadow-[#c6f00d]/40 transition-all duration-500 max-sm:bg-gradient-to-l max-sm:from-[#bbb6b63a]
     ">
-        <div class="flex justify-between items-center mx-5  
+        <div class="flex justify-center items-center gap-5 mx-5  
         ">
             <!-- logo -->
-            <div class="flex items-center gap-2
+            <div class="w-[28%] flex items-center gap-2 
+            max-md:w-[50%]
             "> 
                <!-- logo area -->
                 <div class="border-1 border-gray-400 w-9.5 h-9.5 rounded-full flex justify-center items-center">
@@ -34,47 +35,98 @@
                 </h1>
             </div>
 
-            <!-- communication -->
-            <div class=" flex items-center gap-10 text-gray-500 border-1 border-transparent max-[850px]:gap-3
-            max-md:hidden">
-                <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-            </div>
-            <div id="menubar" class="hidden border-1 border-transparent
-            max-md:block max-md:text-gray-200 max-md:bg-[#4045473b] max-md:px-2 py-2 rounded-lg max-md:text-center max-md:fixed -right-20 top-30 transition-all duration-1000
+            <div class="w-[72%] flex justify-center items-center
             ">
-                <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-                <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
-               
-            </div>
+                <div class="w[25%]">
+                     <!-- product about -->
 
-            <!-- button area -->
-            <div class="
-            max-md:grid max-md:grid-cols-1 max-md:items-center
-               ">
-               <label class="text-center" for="search">search</label>
-                <input
-                class="text-center bg-gray-700 w-20
-                hover:bg-gradient-to-t from-[#e1e5ec91] rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
-                 border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
-                 "
-                type="text" 
-                id="search" 
-                >
+                    <div class=" flex items-center gap-5 text-gray-500 border-1 border-transparent max-[850px]:gap-3
+                    max-md:hidden
+                    ">
+                        <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                    </div>
 
-                 <button id="nav" class="hover:bg-gradient-to-t from-[#e1e5ec91] px-2 rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
-                 border-1 border-transparent hover:border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
-                 ">sign-up</button>
+                    <div id="menubar" class="hidden border-1 border-transparent
+                    max-md:block max-md:text-gray-200 max-md:bg-[#4045473b] max-md:px-2 py-2 rounded-lg max-md:text-center max-md:fixed -right-20 top-30 transition-all duration-1000
+                    ">
+                        <p class=" hover:text-white transition-all duration-500 hover:border-b-1">Products</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                        <p  class=" hover:text-white transition-all duration-500 hover:border-b-1">About</p>
+                    
+                    </div>
+                </div>
 
-                 <!-- socialMedia button -->
-                 <button onclick="asidesocialMedia()" class=" max-md:hidden">
-                    <i class="fa-regular fa-handshake"></i>
-                 </button>
+                <div class="w-[50%] 
+                max-md:w[65%]
+                ">
+                    <!-- search profile cart wishlist in area -->
+
+                    <div class=" flex justify-end items-center gap-2
+                    ">
+
+                        <div class=" text-center">
+                            <label 
+                            class="text-gray-500 text-sm" 
+                            for="search
+                            ">
+                            search
+                            </label>
+                            
+                            <input
+                            class="text-center bg-gray-700 w-18
+                                hover:bg-gradient-to-t from-[#e1e5ec91] rounded-sm text-sm text-[#e2e5e7] tracking-widest font-serif
+                                border-gray-200 hover:border-1 hover:text-[#8dc9c2] transition-all duration-500
+                                "
+                            type="text" 
+                            id="search
+                            ">
+                        </div>
+
+                        <div class="flex  gap-2">
+                                <!-- profile -->
+                            <button 
+                            class="w-7 px-5 py-2 flex justify-center items-center border-1 border-gray-600 rounded-full text-sm text-[#e2e5e7] 
+                            hover:bg-gradient-to-t from-[#e1e5ec91] hover:border-gray-500 hover:border-1 hover:text-[#8dc9c2] transition-all duration-300
+                            ">
+                            <i class="fa-regular fa-user"></i>
+                            </button>
+            
+                            <!-- wishlist -->
+                            <button 
+                            class="w-7 px-5 py-2 flex justify-center items-center border-1 border-gray-600 rounded-full text-sm text-[#e2e5e7] 
+                            hover:bg-gradient-to-t from-[#e1e5ec91] hover:border-gray-500 hover:border-1 hover:text-[#8dc9c2] transition-all duration-300
+                            ">
+                            <i class="fa-regular fa-heart"></i>
+
+                            </button>
+                        
+                            <!-- cart area -->
+                            <div>
+                                <a 
+                                class="w-7 px-5 py-2 flex justify-center items-center border-1 border-gray-600 rounded-full text-[12px] text-[#e2e5e7] 
+                                hover:bg-gradient-to-t from-[#e1e5ec91] hover:border-gray-500 hover:border-1 hover:text-[#8dc9c2] transition-all duration-300
+                                "
+                                href="#
+                                ">
+                                    <i class="fa-solid fa-cart-arrow-down "></i>
+                                    
+                                    <p class="text-[10px] font-serif font-semibold text-gray-200
+                                    ">
+                                        1
+                                    </p>
+                                </a>
+                            </div>
+                            <!-- end of the profile,wishlist,cart -->
+                        </div>
+                            <!-- search and end of the profile,wishlist,cart -->
+                    </div>
+                </div>
+                <!--end of the ...main div of ( search and end of the profile,wishlist,cart) -->
             </div>
 
             <div class="hidden max-md:block
@@ -136,47 +188,53 @@
 
         </div>
         
-        <!-- cart area -->
-                <a href=""></a>
-                <button onclick="asideCart()"
-                class="fixed top-65 right-1 text-[#010911] text-xl w-12 h-12 bg-[#2d5f6ec9] text-center rounded-sm 
-                max-sm:top-65
-                ">
-                    <i class="fa-solid fa-cart-arrow-down "></i>
-                    <p class="text-sm font-serif font-semibold text-gray-200
-                    ">
-                        + 1</p>
-                </button>
-
+        
     </section>
 
 
-    <section class="m-5
-    "> 
-        <div class="border-1 border-gray-600 rounded-md w-70 bg-[#065e7931] shadow-lg shadow-gray-500/30
+    <div class="bg-gradient-to-r from-[#a8aaac71] mb-10 hover:shadow-md hover:shadow-[#85df0f]/30 transition-all duration-500
         ">
-            <div class="relative px-3 pt-3 pb-1
+            <h1 class="text-3xl tracking-widest font-serif text-center py-2
+            ">
+                BIGGEST DEALS ON TOP BRANDS
+            </h1>
+        </div>
+    <section class="m-5 grid grid-cols-1 gap-5
+    "> 
+        
+
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
             ">
                 <!-- id and wishlist -->
-                <div class="flex gap-30 px-3 font-thin bg-[#3534345d] rounded-sm
-                absolute left-4 top-4 z-1 
+                <div class="flex justify-between items-center mx-1 mb-1
+                
                 ">
-                    <p class="text-sm text-[#000813] font-semibold
+                    <p class="text-[10px] text-[#565758] font-semibold
                     ">
                         Id-09_215
                     </p>
-                    <p class="text-gray-400"
-                    ><i class="fa-regular fa-heart text-sm"></i></p>
-                </div>
 
-                <!-- rating -->
-                <div class="max-w-30 text-gray-200 text-sm py-0.5 flex justify-center items-center gap-2 rounded-sm bg-[#57535349] font-mono tracking-widest
-                absolute top-37 left-4 z-1
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
                 ">
                     <p>5.1</p>
-                    <p class="border-r-2 pr-2"
-                    ><i class="fa-solid fa-star text-orange-500 text-xs"></i></p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
                     <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
                 </div>
 
                 <img class="w-full rounded-sm"
@@ -209,7 +267,7 @@
                     </p>
                     <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
                     ">
-                        Lorem ipsum dolor sit amet  nulla beatae doloribus maiores omnis aliquid distinctio molestiae commodi earum?
+                        Lorem ipsum dolor sit liike wise foot wear amet.
                     </p>
                 </div>
     
@@ -218,8 +276,11 @@
                 ">
                    <p class="text-[#b5c1c5e1]
                    "> 
-                    Rs. <span class="text-white tracking-widest">65000</span></p>
-                   <p class="text-xs text-pink-400 line-through decoration-black decoration-2
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
                    "> Rs. 130000 </p>
                    
                 </div>
@@ -227,23 +288,1124 @@
                 <!-- cart and buy -->
                  <div class=" flex justify-center gap-5 my-3
                  ">
-                    <button class="text-sm text-white bg-orange-600 px-2 rounded-sm border-1 border-transparent
-                    hover:bg-[#000c16] hover:text-orange-600 hover:font-semibold  hover:rounded-sm transition-all duration-300
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
                     ">
                     Buy now
                     </button>
     
-                    <button class="text-sm text-black bg-gray-400 px-2 rounded-sm border-1 border-transparent
-                    hover:bg-[#000c16] hover:text-gray-400 hover:font-semibold hover:border-1 hover:rounded-sm transition-all duration-300
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
                     ">
                     Add cart
                     </button>
     
                  </div>
             </div>
-            
-
         </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+        <div class="border-1 border-gray-600 rounded-md w-50 bg-[#065e7931] shadow-md shadow-gray-500/30
+        ">
+            <div class="px-3 pb-1
+            ">
+                <!-- id and wishlist -->
+                <div class="flex justify-between items-center mx-1 mb-1
+                
+                ">
+                    <p class="text-[10px] text-[#565758] font-semibold
+                    ">
+                        Id-09_215
+                    </p>
+
+                    <!-- rating -->
+                <div class="mt-1 text-gray-200 text-[10px] flex justify-center items-center font-mono space-x-1
+                ">
+                    <p>5.1</p>
+
+                    <p class="border-r-1 mr-1 pr-1 
+                    ">
+                    <i class="fa-solid fa-star text-orange-500 text-[8px]"></i>
+                    </p>
+
+                    <p>318</p>
+
+                </div>
+
+                    <p class="text-gray-400 font-extralight
+                    ">
+                    <i class="fa-regular fa-heart text-[10px]"></i>
+                    </p>
+
+                </div>
+
+                <img class="w-full rounded-sm"
+                src="Javascript/dronepic/drone-1.jpg" alt="drone-1">
+            </div>
+           
+            <div class="px-3
+            ">
+                <!-- discount and cetagory -->
+                <div class="flex justify-between">
+                    <h1 class="font-semibold text-sm text-[#5392b6ee] tracking-widest
+                    ">
+                        DRONE
+                    </h1>
+    
+                    <p class="text-sm tracking-widest font-extralight
+                    ">
+                    50% <span class="text-[#bae207]
+                        ">
+                        Off</span>
+                    </p>
+                </div>
+    
+                <!-- name and description -->
+                <div class="my-2
+                ">
+                    <p class="text-lg text-center tracking-widest font-serif
+                    ">
+                        Parrot-Anafi
+                    </p>
+                    <p class="text-xs tracking-wider font-thine text-justify text-[#81898fa8]
+                    ">
+                        Lorem ipsum dolor sit liike wise foot wear amet.
+                    </p>
+                </div>
+    
+                <!-- price  -->
+                <div class="flex justify-center gap-5 items-center bg-gradient-to-r via-[#309fc054] 
+                ">
+                   <p class="text-[#b5c1c5e1]
+                   "> 
+                    Rs. 
+                    <span class="text-white tracking-widest text-[12px]
+                    ">65000</span></p>
+
+                   <p class="text-[10px] text-gray-400 line-through decoration-black decoration-1
+                   "> Rs. 130000 </p>
+                   
+                </div>
+    
+                <!-- cart and buy -->
+                 <div class=" flex justify-center gap-5 my-3
+                 ">
+                    <button class="text-xs text-white bg-orange-500 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-orange-300  hover:rounded-sm transition-all duration-300
+                    ">
+                    Buy now
+                    </button>
+    
+                    <button class="text-xs text-black bg-gray-400 px-1 rounded-sm border-1 border-transparent
+                    hover:bg-[#000c16] hover:text-gray-400  hover:border-1 hover:rounded-sm transition-all duration-300
+                    ">
+                    Add cart
+                    </button>
+    
+                 </div>
+            </div>
+        </div>
+
+
+        
     </section>
 
     <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ratione excepturi dolore officia deserunt nostrum voluptates ipsam, obcaecati voluptatum perferendis, fuga eaque vero deleniti tempora nulla quos vitae voluptatem accusantium.

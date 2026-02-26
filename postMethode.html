@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST methodd</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+<body class="bg-gray-200">
+        <h1>Post Method</h1>
+
+        <div class="mx-auto">
+        <form 
+        onsubmit="handleSubmit(event)"
+        class="bg-[#524f4f88] w-100 mx-auto p-10 rounded-md grid  space-y-2
+        ">
+            <label 
+            class="text-gray-50 pr-2"
+            for="name">
+                Name
+            </label>
+            <input
+                class="bg-transparent shadow-md shadow-gray-900/50 text-center 
+                rounded-sm text-black outline-none"
+                type="text"
+                name="name" 
+                id="name"
+                placeholder="Name"
+            >
+
+
+            <label 
+            class="text-gray-50 pr-2"
+            for="phone">
+                Phone
+            </label>
+            <input
+                class="bg-transparent shadow-md shadow-gray-900/50 text-center 
+                rounded-sm text-black outline-none"
+                type="number"
+                name="phone" 
+                id="phone"
+                placeholder="phone"
+            >
+
+
+            <label 
+            class="text-gray-50 pr-2"
+            for="whatsapp">
+                Whatsapp
+            </label>
+            <input
+                class="bg-transparent shadow-md shadow-gray-900/50 text-center 
+                rounded-sm text-black outline-none"
+                type="number"
+                name="whatsapp" 
+                id="whatsapp"
+                placeholder="whatsapp"
+            >
+
+
+            <label 
+            class="text-gray-50 pr-2"
+            for="email">
+                Email
+            </label>
+            <input
+                class="bg-transparent shadow-md shadow-gray-900/50 text-center 
+                rounded-sm text-black outline-none"
+                type="email"
+                name="email" 
+                id="email"
+                placeholder="email"
+            >
+
+
+            <label 
+            class="text-gray-50 pr-2"
+            for="">
+                Course Id
+            </label>
+            <input
+                class="bg-transparent shadow-md shadow-gray-900/50 text-center 
+                rounded-sm text-black outline-none"
+                type="text"
+                name="courseid" 
+                value="ISTCD001" disabled
+                id=""
+                placeholder="course id"
+            >
+
+            <button class="mt-4 bg-blue-300 shadow-md shadow-gray-900/50 rounded-sm">
+                <input
+                class=" text-black "
+                type="Submit"
+            >
+            </button>
+
+            
+        </form>
+        </div>
+            
+        <script>
+
+        
+        
+        async function handleSubmit(e) {
+            e.preventDefault();
+
+        const newStudent = {
+        name : e.target.name.value,
+        phone : e.target.phone.value,
+        whatsapp : e.target.whatsapp.value,
+        email : e.target.email.value,
+        courseid : e.target.courseid.value,
+        }
+            
+        await fetch("http://locathost5050", {
+            method : "POST",
+            headers : {"Cotent-Type" : "application/JSON"},
+            body : JSON.stingify(newStudent)
+        })
+    }
+
+    
+
+
+        </script>
+</body>
+</html>

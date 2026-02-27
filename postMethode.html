@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 </head>
-<body class="bg-gray-200">
+<body class="bg-gray-500">
         <h1>Post Method</h1>
 
         <div class="mx-auto">
@@ -30,7 +30,6 @@
                 placeholder="Name"
             >
 
-
             <label 
             class="text-gray-50 pr-2"
             for="phone">
@@ -44,7 +43,6 @@
                 id="phone"
                 placeholder="phone"
             >
-
 
             <label 
             class="text-gray-50 pr-2"
@@ -60,7 +58,6 @@
                 placeholder="whatsapp"
             >
 
-
             <label 
             class="text-gray-50 pr-2"
             for="email">
@@ -74,7 +71,6 @@
                 id="email"
                 placeholder="email"
             >
-
 
             <label 
             class="text-gray-50 pr-2"
@@ -97,13 +93,47 @@
                 type="Submit"
             >
             </button>
-
-            
         </form>
+        </div>
+
+        <div class="bg-gray-700 m-5 p-5  text-white w-80">
+            <div>
+                <h1>Name : </h1>
+            </div>
+            <div>
+                <p>Phone :</p>
+                <p>whatsapps :</p>
+                <h1>Email : </h1>
+            </div>
         </div>
             
         <script>
+        const ram = [
+            {name : "salam sanathoiba singh",
+            phone : 8975232548,
+            whatsapps : 6232548754,
+            email : "sanathoiba@gmail.com",
+            courseid : "ISTSC0015H"},
+            
+            {name : "salam sanathoiba singh",
+            phone : 8975232548,
+            whatsapps : 6232548754,
+            email : "sanathoiba@gmail.com",
+            courseid : "ISTSC0015H"},
 
+            {name : "salam sanathoiba singh",
+            phone : 8975232548,
+            whatsapps : 6232548754,
+            email : "sanathoiba@gmail.com",
+            courseid : "ISTSC0015H"},
+
+            {name : "salam sanathoiba singh",
+            phone : 8975232548,
+            whatsapps : 6232548754,
+            email : "sanathoiba@gmail.com",
+            courseid : "ISTSC0015H"},
+
+        ]
         
         
         async function handleSubmit(e) {
@@ -112,7 +142,7 @@
         const newStudent = {
         name : e.target.name.value,
         phone : e.target.phone.value,
-        whatsapp : e.target.whatsapp.value,
+        whatsapp : e.target.whatsapps.value,
         email : e.target.email.value,
         courseid : e.target.courseid.value,
         }

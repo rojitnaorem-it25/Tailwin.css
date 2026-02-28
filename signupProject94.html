@@ -3,9 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Sing Up </title>
 </head>
-<body>
+<body class="">
+        <section class="h-screen flex justify-center items-center text-white bg-[#011316]
+        ">
+            <div class="bg-gradient-to-tl from-[#0a979c] p-1 to-[#c90bb9] rounded-tl-[25px] rounded-br-[25px]
+            ">
+                <div class="px-5 py-10 w-100 max-sm:w-70 bg-gradient-to-br to-[#36071a] from-[#060114] rounded-tl-[17px] rounded-br-[17px]
+                ">
+                    <!-- heading welcome to creat acc -->
+                    <div>
+                        <p class="text-xl font-semibold font-serif tracking-widest text-center
+                        ">
+                            Welcome to Electro Pro</p>
     
+                        <p class="text-gray-200/80 text-sm tracking-widest text-center
+                        ">
+                            Create your account</p>
+                    </div>
+                     
+                    <!-- google witg sign in -->
+                    <div class="my-5 flex justify-center items-center gap-5 tracking-widest 
+                    ">
+                        <p class="border-1 border-gray-500/50 px-6 py-0.5 rounded-lg 
+                        ">
+                        <span>
+                             <i class="fa-brands fa-google text-sm"></i>
+                        </span>
+                            Google
+                        </p>
+    
+                        <!-- apple with sign in -->
+                        <p class="border-1 border-gray-500/50 px-6 py-0.5 rounded-lg 
+                        "
+                        >
+                        <span>
+                            <i class="fa-brands fa-apple"></i>
+                        </span>
+                            Apple
+                        </p>
+                    </div>
+    
+                    <div class="flex items-center 
+                    ">
+                        <hr class="text-gray-700 flex-grow">
+                        <span class="text-gray-400 mx-2 pb-1"
+                        >or 
+                        </span>
+                        <hr class="text-gray-700 grow">
+                    </div>
+                    
+                       <!-- form with input  -->
+                    <form>
+                         <!-- username and email -->
+                        <div class="flex justify-center gap-3
+                        max-sm:flex-col
+                        ">
+                                <!-- username -->
+                            <div class="grid gap-1
+                            ">
+                                <label 
+                                class="text-sm pl-3"
+                                for="username">Username
+                                </label>
+                                <input
+                                class="outline-none text-sm text-center bg-gray-600/40 py-0.5 rounded-md " 
+                                type="text"
+                                id="username"
+                                placeholder="Enter username"
+                                >   
+                            </div>
+                                <!-- email address -->
+                            <div class="grid gap-1 m
+                            ">
+                                <label 
+                                class="text-sm pl-3"
+                                for="email">Email
+                                </label>
+                                <input
+                                class="outline-none text-sm text-center bg-gray-600/40 py-0.5 rounded-md " 
+                                type="text"
+                                id="email"
+                                placeholder="Enter email address"
+                                >   
+                            </div>
+                        </div>
+                        <!-- password -->
+                         <div>
+                            <div class="my-3 grid items-center gap-1 px-3
+                            ">
+                                <label 
+                                class="text-sm pl-3"
+                                for="password">Password
+                                </label>
+                                <input
+                                class="outline-none text-sm text-center bg-gray-600/40 py-0.5 rounded-md" 
+                                type="password"
+                                id="password"
+                                placeholder="password"
+                                >   
+                            </div>
+    
+                            <!-- strong password -->
+                             <div class="mx-5
+                             ">
+                                <p class="text-[12px] flex gap-2 text-gray-300
+                                ">
+                                     <input type="radio"                   >
+                                     Key must have special symbols like @#$% etc.
+                                </p>
+                                <p class="text-[12px] flex gap-2 text-gray-300
+                                ">
+                                     <input type="radio"                   >
+                                     Key must be longer than 8 symbols
+                                </p>
+                             </div>
+                             <!-- confirm password -->
+                              <div class="my-3 grid items-center gap-1 px-3
+                            ">
+                                <label 
+                                class="text-sm pl-3"
+                                for="confirm_password">Confirm password
+                                </label>
+                                <input
+                                class="outline-none text-sm text-center bg-gray-600/40 py-0.5 rounded-md" 
+                                type="password"
+                                id="confirm_password"
+                                placeholder="confirm password"
+                                >   
+                            </div>
+                         </div>
+                         <!-- submit button -->
+                          <div class="mt-10 mb-2 bg-[#0ce27e] mx-5 py-1 rounded-md text-center text-black font-bold
+                          ">
+                              <button>
+                                Sign up
+                              </button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 </body>
 </html>

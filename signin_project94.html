@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <title>Sign in</title>
+</head>
+<body class="bg-[#011c20]">
+
+     <section class="grid gap-4
+     ">
+        <!-- full background area in sign in -->
+        <div class="mt-20 mb-3 mx-auto w-80 h-68 bg-gradient-to-t from-[#3f3c3c] to-[#0e0f0f] border-2 border-[#8080809d]
+        ">
+                <!-- icon for personal -->
+                <div class="my-2  flex justify-center items-center
+                ">
+                    <h1 class="w-15 h-15 text-[#0abd0a] border-1 border-gray-400 rounded-full 
+                    flex justify-center items-center
+                    ">
+                        <i class="fa-solid fa-user text-4xl"></i>
+                    </h1>
+                </div>
+
+            <!-- form -->
+            <form class="px-1
+            ">
+                <div class="mx-5 mb-2 p-1 bg-gradient-to-r from-[#d1ccccec] rounded-md border-r-1 border-gray-600
+                ">
+                    <!-- username -->
+                    <label 
+                    class="text-[#056305] font-semibold border-r-2 px-5 mr-2" 
+                    for="username"
+                    >
+                        <i class="fa-regular fa-user"></i>
+                    </label>
+                    <input
+                    class="outline-none text-gray-100 text-end" 
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="username
+                    ">
+                </div>
+                <!-- password -->
+                <div class="mx-5 p-1 bg-gradient-to-r from-[#d1ccccec] rounded-md border-r-1 border-gray-600
+                ">
+                    <label 
+                    class="text-[#056305] font-semibold border-r-2 px-5 mr-2" 
+                    for="password"
+                    >
+                        <i class="fa-solid fa-lock animate-bounce"></i>
+                    </label>
+                    <input
+                    class="outline-none text-gray-100 text-end" 
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="password
+                    ">
+                </div>
+                <!-- Log in button -->
+                <div class="flex justify-center mx-5 mt-8 py-1 px-5 bg-gradient-to-r via-[#0bec1e88] border-x-1 border-white rounded-md
+                ">
+                    <button class="text-gray-200 font-semibold animate-pulse
+                    ">
+                        Log in
+                    </button>
+                </div>
+            </form>
+
+            <!-- remerber with forgot password -->
+             <div class="flex justify-between items-center mx-5 my-1
+             ">
+                    <!-- remember me -->
+                <div class="flex items-center gap-2
+                ">
+                    <input 
+                    class=""
+                    type="checkbox" 
+                    name="" 
+                    id="remember">
+                    <label 
+                    class="text-sm text-white"
+                    for="remember
+                    ">Remember me
+                    </label>
+                </div>
+
+                    <!-- forgot password -->
+                <i class="bg-[#302e2e00] px-2 py-0.5 rounded-md text-[12px] text-blue-400 font-extralight tracking-widest
+                shadow-lg shadow-[gray]/30
+                ">Forgot password</i>
+             </div>
+
+             <!-- creat account -->
+              <div class="grid justify-start mt-5 
+              ">
+                <p class="bg-gradient-to-r from-[#011c20] to-[gray] text-gray-200 px-3 rounded-e-sm
+                ">Create your Account
+                    <span class="text-[#043604fb]
+                    ">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-long animate-pulse"></i>
+                        </a>
+                    </span>
+                </p>
+              </div>
+             
+        </div>
+        <!-- end of the full background area -->
+
+        
+         
+
+        <!-- signin with google or apple account -->
+        <div class=" mx-auto w-80 h-18 bg-gradient-to-b from-[#3f3e3e] to-[#0e0f0f] 
+        rounded-b-lg flex justify-center items-center gap-2 border-2 border-[#8080809d]
+        ">
+
+            <!-- apple account -->
+            <div>
+                <p class="text-[#0a0a0a] tracking-widest bg-[#ebeeee44] px-5 py-2 rounded-b-md
+                ">
+                    <i class="fa-brands fa-apple text-lg font-semibold text-black"></i>
+                    <span class="text-lg font-serif font-semibold
+                    ">
+                        sign in
+                    </span>
+                </p>
+            </div>
+            <!-- google acount -->
+            <div>
+                <p class="flex items-center gap-3 text-[#d1cdcd] tracking-widest bg-[#afb4b444] px-5 py-2 rounded-b-md
+                ">
+                    <!-- <i class="fa-brands fa-google text-md font-semibold"></i> -->
+                     <img 
+                     class="w-4 h-4"
+                     src="Javascript/dronepic/google.png" 
+                     alt="google_signin">
+                    <span class="text-lg font-serif font-semibold
+                    ">
+                        sign in
+                    </span>
+                </p>
+            </div>
+
+        </div>
+
+     
+
+    </section>
+    
+    
+</body>
+</html>
